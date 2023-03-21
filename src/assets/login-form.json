@@ -1,0 +1,37 @@
+[
+  {
+    "template": "<h5><div>Please Login</div></h5><hr />"
+  },
+  {
+    "fieldGroupClassName": "display-flex",
+    "fieldGroup": [
+      {
+        "className": "flex-1",
+        "key": "userName",
+        "type": "input",
+        "templateOptions": {
+          "label": "User Name",
+          "placeholder": "Enter User Name",
+          "required": true
+        }
+      }
+    ]
+  },
+  {
+    "fieldGroupClassName": "display-flex",
+    "fieldGroup": [
+      {
+        "className": "flex-1",
+        "key": "password",
+        "type": "input",
+        "templateOptions": {
+          "type": "password",
+          "pattern": "",
+          "label": "Password",
+          "placeholder": "Enter Password",
+          "required": true
+        }
+      }
+    ]
+  }
+]

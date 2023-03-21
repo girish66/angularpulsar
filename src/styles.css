@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "bootstrap/dist/css/bootstrap.css";
+@import "ag-grid-community/styles/ag-grid.css";
+@import "ag-grid-community/styles/ag-theme-balham.css";
+
+
+
+/* Increase label size */
+.mat-form-field label {
+  font-size: 16px;
+}
+.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
+.mat-form-field-can-float .mat-input-server:focus + .mat-form-field-label-wrapper .mat-form-field-label {
+  transform: translateY(-1.34375em) scale(1) !important; /* originally scale(0.75) */
+}
+
+/* Changing Checkbox Color */
+.mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate, .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate {
+  background: #000;
+}
+
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+hr {
+  border: 6px solid #45693b;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+[class*="flex-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+[class*="flex-"]:first-child {
+  padding-left: 0;
+}
+
+[class*="flex-"]:nth-last-child(2) {
+  padding-right: 0;
+}
