@@ -68,8 +68,7 @@ export class UsersComponent {
   };
 
   constructor(private router: Router, @Inject(LOCALE_ID) private locale: string, private zone: NgZone, private graphqlService: GraphqlService) {
-
-    graphqlService
+    this.graphqlService
       .Users()
       .pipe(first())
       .subscribe((users: User[]) => {

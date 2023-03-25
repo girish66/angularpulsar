@@ -66,6 +66,7 @@ import {NavMenuComponent} from './nav-menu/nav-menu.component';
 import {HomeComponent} from "./home/home.component";
 import {LoginComponent} from "./login/login.component";
 import {UsersComponent} from "./users/users.component";
+import {UserCreateComponent} from "./user-create/user-create.component";
 
 // Services
 import {LoginService} from './_services';
@@ -84,7 +85,8 @@ const appearance: MatFormFieldDefaultOptions = {
     NavMenuComponent,
     HomeComponent,
     LoginComponent,
-    UsersComponent
+    UsersComponent,
+    UserCreateComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
@@ -119,6 +121,7 @@ const appearance: MatFormFieldDefaultOptions = {
       {path: '', component: HomeComponent, pathMatch: 'full'},
       {path: "login", component: LoginComponent},
       {path: "users", component: UsersComponent},
+      {path: "usercreate", component: UserCreateComponent}
     ]),
     ApolloModule,
     GraphQLModule
